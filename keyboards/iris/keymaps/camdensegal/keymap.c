@@ -24,6 +24,9 @@ enum custom_keycodes {
 #define KC_RST RESET
 #define KC_BL_S BL_STEP
 
+#define KC_ALBS MT(MOD_LALT, KC_BSPC)
+#define KC_GUTB MT(MOD_LGUI, KC_TAB)
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_QWERTY] = KC_KEYMAP(
@@ -34,9 +37,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
      LCTL, A  , S  , D  , F  , G  ,                H  , J  , K  , L  ,SCLN,QUOT,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
-     LSPO, Z  , X  , C  , V  , B  ,LGUI ,     LALT , N  , M  ,COMM,DOT ,SLSH,RSPC,
+     LSPO, Z  , X  , C  , V  , B  ,ALBS,     GUTB, N  , M  ,COMM,DOT ,SLSH,RSPC,
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
-                       RASE,LOWR,SPC ,         ENT ,LOWR,RASE
+                       RASE,SPC ,LOWR ,         LOWR ,ENT ,RASE
   //                  `----+----+----'        `----+----+----'
   ),
 
@@ -48,9 +51,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
      DEL ,    ,LEFT,RGHT, UP ,LBRC,               RBRC, P4 , P5 , P6 ,PLUS,PIPE,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
-     BL_S,    ,    ,    ,DOWN,LCBR,LPRN,     RPRN,RCBR, P1 , P2 , P3 ,MINS,    ,
+     BL_S,    ,    ,    ,DOWN,LCBR,    ,         ,RCBR, P1 , P2 , P3 ,MINS,    ,
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
-                           ,    ,DEL ,         DEL ,    , P0
+                           ,    ,    ,             ,    , P0
   //                  `----+----+----'        `----+----+----'
   ),
 
@@ -60,7 +63,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
          ,EXLM, AT ,HASH,DLR ,PERC,               CIRC,AMPR,ASTR,LPRN,RPRN,    ,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-         ,MPRV,MNXT,VOLU,PGUP,UNDS,               EQL ,HOME,    ,    ,    ,BSLS,
+         ,MPRV,MNXT,VOLU,PGUP,UNDS,               LEFT,DOWN, UP ,RGHT,    ,BSLS,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
      MUTE,MSTP,MPLY,VOLD,PGDN,MINS,    ,         ,PLUS,END ,    ,    ,    ,    ,
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
