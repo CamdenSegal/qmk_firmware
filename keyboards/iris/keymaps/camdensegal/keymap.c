@@ -27,7 +27,10 @@ enum custom_keycodes {
 #define KC_SPCT MT(MOD_LCTL,KC_SPC)
 #define KC_ENGU MT(MOD_LGUI,KC_ENT)
 
-#define KC_ACTL MT(MOD_LCTL,KC_A)
+#define KC_AHYP MT(MOD_HYPR,KC_A)
+#define KC_SCLH MT(MOD_HYPR,KC_A)
+
+
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -37,11 +40,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
      TAB , Q  , W  , E  , R  , T  ,                Y  , U  , I  , O  , P  ,EQL ,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-     LCTL, A  , S  , D  , F  , G  ,                H  , J  , K  , L  ,SCLN,QUOT,
+     HYPR, A  , S  , D  , F  , G  ,                H  , J  , K  , L  ,SCLN,QUOT,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
      LSPO, Z  , X  , C  , V  , B  ,RASE,     RASE, N  , M  ,COMM,DOT ,SLSH,RSPC,
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
-                       LOWR,LALT,SPC ,         ENGU,BSPC,LOWR
+                       LALT,LOWR,SPCT,         ENGU,BSPC,LOWR
   //                  `----+----+----'        `----+----+----'
   ),
 
@@ -51,7 +54,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
          , 1  , 2  , 3  , 4  , 5  ,                6  , P7 , P8 , P9 , P0 ,    ,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-         ,    ,LEFT,RGHT, UP ,LBRC,               RBRC, P4 , P5 , P6 ,PLUS,PIPE,
+         ,    ,LEFT,RGHT, UP ,LBRC,               RBRC, P4 , P5 , P6 ,PLUS,BSLS,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
          ,    ,    ,    ,DOWN,LCBR,    ,         ,RCBR, P1 , P2 , P3 ,MINS,    ,
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
