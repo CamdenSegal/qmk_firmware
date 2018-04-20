@@ -50,7 +50,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LOWER] = KC_KEYMAP(
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
-     TILD,EXLM, AT ,HASH,DLR ,PERC,               CIRC,AMPR,ASTR,LPRN,RPRN,BSPC,
+     GRV ,EXLM, AT ,HASH,DLR ,PERC,               CIRC,AMPR,ASTR,LPRN,RPRN,BSPC,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
          , 1  , 2  , 3  , 4  , 5  ,                6  , P7 , P8 , P9 , P0 ,    ,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
@@ -66,7 +66,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
      F12 , F1 , F2 , F3 , F4 , F5 ,                F6 , F7 , F8 , F9 ,F10 ,F11 ,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-         ,EXLM, AT ,HASH,DLR ,PERC,               CIRC,AMPR,ASTR,LPRN,RPRN,    ,
+     GRV ,EXLM, AT ,HASH,DLR ,PERC,               CIRC,AMPR,ASTR,LPRN,RPRN,    ,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
          ,MPRV,MNXT,VOLU,PGUP,UNDS,               LEFT,DOWN, UP ,RGHT,    ,BSLS,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
