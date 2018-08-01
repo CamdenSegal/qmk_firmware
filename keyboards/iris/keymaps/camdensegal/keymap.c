@@ -14,7 +14,6 @@ enum custom_keycodes {
   QWERTY = SAFE_RANGE,
   LOWER,
   RAISE,
-  GAMER,
   ADJUST,
 };
 
@@ -26,7 +25,7 @@ enum custom_keycodes {
 #define KC_RASE RAISE
 #define KC_RST  RESET
 #define KC_BL_S BL_STEP
-#define KC_GAME GAMER
+#define KC_GAME TG(_GAMER)
 
 #define KC_SPCT MT(MOD_LCTL,KC_SPC)
 #define KC_ENGU MT(MOD_LGUI,KC_ENT)
